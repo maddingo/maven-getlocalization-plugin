@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>no.uis.test</groupId>
+  <artifactId>getlocalization</artifactId>
+  <packaging>jar</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>maven-plugin Maven Test</name>
+  <url>http://forge.uis.no/projects/maven-getlocalization-plugin</url>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>no.uis.maven</groupId>
+        <artifactId>getlocalization-maven-plugin</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <configuration>
+          <glProject>uis_studinfo_pdf</glProject>
+          <glUser>maddin</glUser>
+          <glPassword>XXXX</glPassword>
+          <retries>3</retries>
+          <fileTranslations>
+            <messages_nn_NO.properties>messages_no_NO_NY.properties</messages_nn_NO.properties>
+            <messages_en_NO.properties>messages_en_GB.properties</messages_en_NO.properties>
+          </fileTranslations>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
